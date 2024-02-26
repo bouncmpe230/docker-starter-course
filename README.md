@@ -33,6 +33,14 @@ docker pull gokceuludogan/cmpe230_spring24:v1
 docker run -it -d --name cmpe230 gokceuludogan/cmpe230_spring24:v1
 ```
 
+This command runs the container in detached mode (-d), with an interactive terminal (-it), and names the container `cmpe230`.
+
+* **run vs. create vs. start**
+
+- **docker run**: This command is used to create a new container and start it immediately. It's a combination of `docker create` and `docker start`. Use this when you want to create and run a container in one step.
+- **docker create**: This command creates a new container but does not start it. It's useful when you want to set up a container in advance and start it later.
+- **docker start**: This command starts a container that was created and stopped. Use this to restart a container that was previously created and stopped.
+
 * **Listing Docker Images**
 
 ```bash
