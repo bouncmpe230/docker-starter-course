@@ -25,12 +25,12 @@ Ensure Docker is installed on your system. Visit [Docker's official website](htt
 
 *  **Pulling the Docker Image**
 ```bash
-docker pull gokceuludogan/cmpe230_spring24:v1
+docker pull gokceuludogan/cmpe230_spring24:latest
 ```
 
 * **Running the Docker Container**
 ```bash
-docker run -it -d --name cmpe230 gokceuludogan/cmpe230_spring24:v1
+docker run -it -d --name cmpe230 gokceuludogan/cmpe230_spring24:latest
 ```
 
 This command runs the container in detached mode (-d), with an interactive terminal (-it), and names the container `cmpe230`.
