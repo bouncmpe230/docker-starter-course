@@ -1,6 +1,6 @@
 
-# CMPE230 Spring 2024 Docker Container
-This README provides a overview of using the Docker container for CMPE230, Spring 2024 edition, along with a comparison between Docker and Virtual Machines (VMs), and a  explanation of Docker containers and images. The Docker image for this course is hosted on Docker Hub under `gokceuludogan/cmpe230_spring24`.
+# CMPE230 Docker Container
+This README provides an overview of using the Docker container for CMPE230,  compares Docker and Virtual Machines (VMs), and explains Docker containers and images. The Docker image for this course is hosted on Docker Hub under `gokceuludogan/cmpe230-spring26`.
 
 ## Comparing Docker with Virtual Machines (VMs)
 
@@ -25,12 +25,12 @@ Ensure Docker is installed on your system. Visit [Docker's official website](htt
 
 *  **Pulling the Docker Image**
 ```bash
-docker pull gokceuludogan/cmpe230_spring24:latest
+docker pull gokceuludogan/cmpe230-spring26:latest
 ```
 
 * **Running the Docker Container**
 ```bash
-docker run -it -d --name cmpe230 gokceuludogan/cmpe230_spring24:latest
+docker run -it -d --name cmpe230 gokceuludogan/cmpe230-spring26:latest
 ```
 
 This command runs the container in detached mode (-d), with an interactive terminal (-it), and names the container `cmpe230`.
