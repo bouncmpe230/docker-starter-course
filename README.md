@@ -4,7 +4,7 @@ This README provides an overview of using the Docker container for CMPE230, comp
 
 ## Comparing Docker with Virtual Machines (VMs)
 
-[image](https://camo.githubusercontent.com/3d9025dab9e0e5184873ca5c817ccde6ed2e1da83d9fbc8e600325c2c12ca45d/68747470733a2f2f7777772e66726565636f646563616d702e6f72672f6e6577732f636f6e74656e742f696d616765732f73697a652f77313630302f323032322f31302f332e706e67)
+![image](https://camo.githubusercontent.com/3d9025dab9e0e5184873ca5c817ccde6ed2e1da83d9fbc8e600325c2c12ca45d/68747470733a2f2f7777772e66726565636f646563616d702e6f72672f6e6577732f636f6e74656e742f696d616765732f73697a652f77313630302f323032322f31302f332e706e67)
 
 - **Architecture**: Virtual Machines virtualize hardware through a hypervisor. Each VM runs its own operating system, including its own kernel. Docker containers instead isolate applications at the operating-system level. Multiple containers can share the same kernel while having their own isolated processes, filesystems, and network environments.
 
