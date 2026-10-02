@@ -1,14 +1,20 @@
 
 # CMPE230 Docker Container
-This README provides an overview of using the Docker container for CMPE230,  compares Docker and Virtual Machines (VMs), and explains Docker containers and images. The Docker image for this course is hosted on Docker Hub under `gokceuludogan/cmpe230-spring26`.
+This README provides an overview of using the Docker container for CMPE230, compares Docker with Virtual Machines (VMs), and explains Docker containers and images. The Docker image for this course is hosted on Docker Hub under `gokceuludogan/cmpe230-spring26`.
 
 ## Comparing Docker with Virtual Machines (VMs)
 
-![](https://www.freecodecamp.org/news/content/images/size/w1600/2022/10/3.png)
-- **Architecture**: Docker utilizes containerization to run applications in isolated environments, sharing the host system’s kernel. In contrast, VMs emulate entire hardware stacks, each running a separate operating system.
-- **Resource Efficiency**: Docker containers are more resource-efficient than VMs, as they share the host's kernel and avoid running multiple OS instances.
-- **Performance**: Containers typically have less overhead compared to VMs, offering improved performance.
-- **Isolation**: While VMs provide strong isolation by completely separating instances, Docker containers offer process-level isolation, which is generally secure but slightly less isolated compared to VMs.
+[image](https://camo.githubusercontent.com/3d9025dab9e0e5184873ca5c817ccde6ed2e1da83d9fbc8e600325c2c12ca45d/68747470733a2f2f7777772e66726565636f646563616d702e6f72672f6e6577732f636f6e74656e742f696d616765732f73697a652f77313630302f323032322f31302f332e706e67)
+
+- **Architecture**: Virtual Machines virtualize hardware through a hypervisor. Each VM runs its own operating system, including its own kernel. Docker containers instead isolate applications at the operating-system level. Multiple containers can share the same kernel while having their own isolated processes, filesystems, and network environments.
+
+- **Resource Efficiency**: Containers are generally more resource-efficient than VMs because they do not require a complete guest operating system for each application. Multiple containers can share the same underlying kernel.
+
+- **Performance**: Containers usually have lower CPU, memory, and startup overhead than VMs. A container can often start in seconds or less because it does not need to boot an entire operating system.
+
+- **Isolation**: VMs provide a stronger isolation boundary because each VM has its own kernel. Containers isolate processes using operating-system mechanisms such as namespaces and cgroups, but containers running on the same host normally share a kernel.
+
+> **Note:** On a Linux host, Linux Docker containers can directly share the host's Linux kernel. On macOS and Windows, Docker Desktop typically runs Linux containers inside a lightweight Linux Virtual Machine because these systems do not provide a Linux kernel directly.
 
 ## Understanding Docker: Containers vs. Images
 
